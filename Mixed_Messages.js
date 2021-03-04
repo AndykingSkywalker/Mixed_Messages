@@ -38,3 +38,5 @@ const formatMotivation = motivation => {
 }
 
 formatMotivation(personalMotivation);
+
+// Tested and fully working!! Now go motivate yourself! :)
