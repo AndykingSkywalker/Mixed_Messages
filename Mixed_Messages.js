@@ -31,3 +31,10 @@ for(let prop in collectiveMotivation) {
 
     }
 }
+
+const formatMotivation = motivation => {
+    const formatted = personalMotivation.join('\n')
+    console.log(formatted)
+}
+
+formatMotivation(personalMotivation);
