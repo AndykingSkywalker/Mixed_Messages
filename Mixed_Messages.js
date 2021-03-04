@@ -11,3 +11,23 @@ const collectiveMotivation = {
 }
 
 let personalMotivation = []
+
+for(let prop in collectiveMotivation) {
+    let optionIdx = randomGeneratedNumber(collectiveMotivation[prop].length)
+
+    switch(prop) {
+        case 'mood':
+            personalMotivation.push(`Your mood right now should be "${collectiveMotivation[prop][optionIdx]}".`)
+            break
+        case 'motivationalPhrase':
+            personalMotivation.push(`Your motivational phrase for today is "${collectiveMotivation[prop][optionIdx]}".`)
+            break
+        case 'advice':
+            personalMotivation.push(`Our advice for today is "${collectiveMotivation[prop][optionIdx]}".`)
+            break
+        default:
+            personalMotivation.push('Not enough info I\'m afraid.')
+
+
+    }
+}
